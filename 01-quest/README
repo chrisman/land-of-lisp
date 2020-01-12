@@ -1,0 +1,29 @@
+# Quest
+
+Welcome to Quest
+
+Quest is a small text-parsing engine. It was a learning exercise for me and is
+very proof-of-concept and is very easy to break.
+
+## How To
+
+`clisp quest.cl`
+
+## Graph Mapping
+
+included is `graph-util.cl` which, if you have *graphviz* installed, you can
+use to map out the location graph used in the game to a png file.
+
+1. `clisp` - start the REPL
+
+2. `(load "graph-utils.cl")`
+
+3. `(load "quest.cl")` (and `quit` to exit the game)
+
+4. `(graph->png "graph" *nodes* *edges*)` for a directed graph. or
+`(ugraph->png "ugraph" *nodes* *edges*)` for an undirected graph. or, hell. do
+both. why not.
+
+5. `(bye)` - exit clisp
+
+6. behold the glory of your graph
